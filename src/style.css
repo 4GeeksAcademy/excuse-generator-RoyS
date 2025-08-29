@@ -1,23 +1,23 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: rgb(4, 247, 247);
+    background-color: rgb(4, 247, 247);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 } */
 
-/* Head */
+/* Headline styling */
 h2.alert {
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-/* text */
+/* Excuse text */
 #excuses {
   font-size: 2rem;
   font-weight: 600;
   color: #222;
-  min-height: 80px
+  min-height: 80px; 
 }
 
 /* Button tweaks */
@@ -32,4 +32,23 @@ h2.alert {
 #excuse-btn:hover {
   transform: scale(1.05);
   background-color: #f0ad4e;
+}
+
+/* Icon */
+i {
+  margin-top: 12px;
+  color: #999;
+}
+
+/* Footer */
+.fixed-bottom {
+  font-size: 0.9rem;
+  color: #666;
+}
+.fixed-bottom a {
+  text-decoration: none;
+  color: #007bff;
+}
+.fixed-bottom a:hover {
+  text-decoration: underline;
 }
