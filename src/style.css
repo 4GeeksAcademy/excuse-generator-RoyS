@@ -1,5 +1,35 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(4, 247, 247);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+} */
+
+/* Head */
+h2.alert {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* text */
+#excuses {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  min-height: 80px
+}
+
+/* Button tweaks */
+#excuse-btn {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#excuse-btn:hover {
+  transform: scale(1.05);
+  background-color: #f0ad4e;
 }

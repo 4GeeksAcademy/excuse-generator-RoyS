@@ -1,11 +1,60 @@
 import "bootstrap";
 import "./style.css";
+{
+// Random excuse generator
+function getRandomExcuse() {
+  const who = [
+    "The dog",
+    "My grandma",
+    "The mailman",
+    "My bird",
+    "My neighbor",
+    "My little brother",
+    "The cat",
+    "The teacher"
+  ];
 
+  const action = [
+    "ate",
+    "peed on",
+    "crushed",
+    "broke",
+    "stole",
+    "hid",
+    "lost",
+    "burned"
+  ];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+  const what = [
+    "my homework",
+    "my phone",
+    "the car",
+    "my shoes",
+    "the TV remote",
+    "my backpack",
+    "my lunch",
+    "the WiFi router"
+  ];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  const when = [
+    "before the class",
+    "when I was sleeping",
+    "while I was exercising",
+    "during my lunch",
+    "while I was praying",
+    "during the exam",
+    "at midnight",
+    "while I was in the shower"
+  ];
+
+  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+  return `${pick(who)} ${pick(action)} ${pick(what)} ${pick(when)}.`;
+}
+
+// Attach event listener
+document.querySelector("#excuse-btn").addEventListener("click", () => {
+  document.querySelector("#excuses").innerText = getRandomExcuse();
+});
+
+  console.log(excuses);
+}
